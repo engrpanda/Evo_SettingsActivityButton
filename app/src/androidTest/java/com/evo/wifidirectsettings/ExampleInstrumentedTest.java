@@ -1,4 +1,4 @@
-package com.ainirobot.wifidirectsettings;
+package com.evo.wifidirectsettings;
 
 import android.content.Context;
 

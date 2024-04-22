@@ -1,4 +1,4 @@
-package com.ainirobot.wifidirectsettings;
+package com.evo.wifidirectsettings;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -47,13 +47,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Hide all buttons except Cast
                 openSettingsActivity("com.android.settings.Settings$WifiDisplaySettingsActivity");
-                openWifiP2PSettingsButton.setVisibility(View.GONE);
-                openSettingsButton.setVisibility(View.GONE);
-                castButton.setVisibility(View.GONE);
-                wifiButton.setText("opencast");
-
-
-
+//                openWifiP2PSettingsButton.setVisibility(View.GONE);
+//                openSettingsButton.setVisibility(View.GONE);
+//                castButton.setVisibility(View.GONE);
+//                wifiButton.setText("opencast");
             }
         });
 

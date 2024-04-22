@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.ainirobot.wifidirectsettings"
+    namespace = "com.evo.wifidirectsettings"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ainirobot.wifidirectsettings"
+        applicationId = "com.evo.wifidirectsettings"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

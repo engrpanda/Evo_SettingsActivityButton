@@ -1,4 +1,4 @@
-package com.evo.wifidirectsettings;
+package com.evo.activitysettings;
 
 import org.junit.Test;
 

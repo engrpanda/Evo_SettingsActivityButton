@@ -1,4 +1,4 @@
-package com.evo.wifidirectsettings;
+package com.evo.activitysettings;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -40,6 +40,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        // Button to open Developer
+        final Button developer = findViewById(R.id.developer);
+        developer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSettingsActivity("com.android.settings.Settings$DevelopmentSettingsDashboardActivity");
+            }
+        });
+
+
         // Button to open Cast to Monitor
         final Button castButton = findViewById(R.id.cast);
         castButton.setOnClickListener(new View.OnClickListener() {
@@ -47,12 +57,22 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Hide all buttons except Cast
                 openSettingsActivity("com.android.settings.Settings$WifiDisplaySettingsActivity");
-//                openWifiP2PSettingsButton.setVisibility(View.GONE);
-//                openSettingsButton.setVisibility(View.GONE);
-//                castButton.setVisibility(View.GONE);
-//                wifiButton.setText("opencast");
             }
         });
+
+        final Button mmi = findViewById(R.id.mmi);
+        mmi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Create an intent to open the specific activity
+                Intent intent = new Intent();
+                intent.setComponent(new ComponentName("com.android.orionfactorymmi", "com.android.orionfactorymmi.OrionFactoryMmi"));
+
+                // Start the activity
+                startActivity(intent);
+            }
+        });
+
 
         // Button to Exit the application
         Button exitButton = findViewById(R.id.exitButton);

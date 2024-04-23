@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.evo.wifidirectsettings"
+    namespace = "com.evo.activitysettings"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.evo.wifidirectsettings"
+        applicationId = "com.evo.activitysettings"
         minSdk = 24
         targetSdk = 34
         versionCode = 1

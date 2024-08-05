@@ -26,7 +26,6 @@
         android:id="@+id/openSettingsButton"
         android:layout_width="170dp"
         android:layout_height="40dp"
-        android:layout_marginTop="200dp"
         android:text="Settings Android"
         android:layout_gravity="center_horizontal"
         />
